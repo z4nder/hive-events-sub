@@ -9,7 +9,7 @@
         </h2>
         <p class="mt-6 text-lg leading-8 text-gray-100">
           Obrigado por se inscrever. Agora, fique atento às seguintes
-          informações.
+          informações:
         </p>
       </div>
       <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -64,7 +64,7 @@ const features = [
   {
     name: "Evento",
     description:
-      "O evento acontecera no dia 25/05/2023 as 19 horas e voce será notificado por email",
+      "O evento acontecerá no dia 25/05/2023 as 19 horas, uma notificação será enviada por e-mail",
     href: "https://www.twitch.tv/z4nder212",
     link: "Será realizado na twitch",
     icon: CalendarDaysIcon,
@@ -72,7 +72,7 @@ const features = [
   {
     name: "Ebook",
     description:
-      "O seu ebook já foi enviado por email, confira a caixa de spam também.",
+      "O seu ebook já foi enviado por e-mail, caso não tenha recebido confira a caixa de spam.",
     href: "#",
     icon: BookOpenIcon,
   },
