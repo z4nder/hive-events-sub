@@ -5,7 +5,7 @@
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-          Inscrito com sucesso
+          🎉 Inscrito com sucesso
         </h2>
         <p class="mt-6 text-lg leading-8 text-gray-100">
           Obrigado por se inscrever. Agora, fique atento às seguintes
@@ -41,6 +41,7 @@
                 <a
                   :href="feature.href"
                   class="text-sm font-semibold leading-6 text-secondary-900"
+                  target="_blank"
                   >{{ feature.link }} <span aria-hidden="true">→</span></a
                 >
               </p>

@@ -24,7 +24,7 @@
           Inscreva-se e ganhe um ebook gratuito sobre Git e GitHub.
         </h2>
         <p
-          class="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-300"
+          class="mx-auto mt-2 max-w-xl text-center text-lg leading-8 text-gray-200"
         >
           Coloque seu email e receberá o ebook na hora, além de ser notificado
           sobre o evento no dia e ficar por dentro das novidades.
@@ -41,14 +41,14 @@
             autocomplete="email"
             required=""
             v-model="subscribe.form.email"
-            class="min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
+            class="placeholder-gray-50 min-w-0 flex-auto rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-white sm:text-sm sm:leading-6"
             placeholder="Seu email"
           />
           <button
             type="submit"
             class="flex-none rounded-md bg-primary-500 px-3.5 py-2.5 text-sm font-semibold text-gray-50 shadow-sm hover:bg-primary-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
           >
-            inscrever-me
+            Inscrever
           </button>
         </form>
         <svg

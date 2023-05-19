@@ -7,8 +7,8 @@
         Criando uma API Rest com Laravel
       </h1>
       <p class="text-justify mb-8 text-xl leading-relaxed lg:text-1xl">
-        Estamos convidando você no para participar de uma aula ao vivo sobre
-        como criar sua primeira API Rest com Laravel. Nesta aula, você terá a
+        Estamos convidando você para participar de uma aula ao vivo sobre como
+        criar sua primeira API Rest com Laravel. Nesta aula, você terá a
         oportunidade de aprender como desenvolver seu primeiro projeto, usando
         boas práticas da implementação do padrão Rest.
       </p>
