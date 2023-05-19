@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+    html {
+        @apply h-full;
+    }
+    body {
+        @apply h-auto font-light py-10;
+        font-family: 'DM Sans', sans-serif;
+        background: linear-gradient(
+            254.12deg, 
+            #6D2CA3 0%, 
+            #76B9F0 50%, 
+            #6D2CA3 100%
+        ) fixed;
+    }
+}
