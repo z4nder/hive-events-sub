@@ -3,7 +3,7 @@ import sgMail from '@sendgrid/mail'
 
 export default defineEventHandler(async (event) => {
   const form = await readBody(event)
-
+  //#TOOD inserir em um db o email, caso ja tenha n envia...
   sgMail.setApiKey(process.env.SENDGRID_API_KEY)
   
   const msg = {
