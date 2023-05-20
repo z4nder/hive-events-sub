@@ -10,8 +10,11 @@ export const useSubscribe = () => {
     });
 
   async function subscribe() {
-    console.log('form', form.email)
-
+    const { data } = await useFetch('/api/subscribe', {
+      method: 'POST',
+      body: JSON.stringify({ email: form.email }),
+    })
+   
     await navigateTo('/registered')
   }
 
