@@ -10,7 +10,7 @@ export const useSubscribe = () => {
     });
 
   async function subscribe() {
-    const { data } = await useFetch('/api/subscribe', {
+    await useFetch('/api/subscribe', {
       method: 'POST',
       body: JSON.stringify({ email: form.email }),
     })
