@@ -1,7 +1,8 @@
 
-import { createSendGrid, sendSubEmail } from '../actions/sendgrid'
+
+import sgMail from '@sendgrid/mail'
+import { sendSubEmail } from '../actions/sendgrid'
 import { createSupabase, verifyRegisterHasExist, insertEmailSend } from '../actions/supabase'
-const smtpClient = "sendgrid"
 
 export default defineEventHandler(async (event) => {
   const form = await readBody(event)
@@ -15,10 +16,8 @@ export default defineEventHandler(async (event) => {
     return true
   }
 
-  let sendgridClient = createSendGrid(process.env.SENDGRID_API_KEY)
-
+  let sendgridClient = sgMail.setApiKey(process.env.SENDGRID_API_KEY)
   const emailSendResponse = await sendSubEmail(sendgridClient, to)
-  console.log("EMAIL SEND")
-  await insertEmailSend(supabaseClient, to, emailSendResponse.success, emailSendResponse.message)
 
+  await insertEmailSend(supabaseClient, to, emailSendResponse.success, emailSendResponse.message)
 })
