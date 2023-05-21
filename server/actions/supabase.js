@@ -1,8 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 
-
-export const createSupabase = async (supabaseUrl, supabaseKey)  => {
-   return supabase = createClient(supabaseUrl, supabaseKey)
+export const createSupabase = (supabaseUrl, supabaseKey)  => {
+   return createClient(supabaseUrl, supabaseKey)
 }
 
 export const verifyRegisterHasExist = async (supabaseClient, email)  => {

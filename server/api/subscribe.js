@@ -7,21 +7,18 @@ export default defineEventHandler(async (event) => {
   const form = await readBody(event)
   const to = form.email
   
-  const supabaseUrl = process.env.SUPABASE_URL
-  const supabaseKey = process.env.SUPABASE_KEY
-  const supabase = createSupabase(supabaseUrl, supabaseKey)
+  const supabaseClient = createSupabase(process.env.SUPABASE_URL, process.env.SUPABASE_KEY)
 
-  const thatEmailHasRegister = await verifyRegisterHasExist(supabase, to)
+  const thatEmailHasRegister = await verifyRegisterHasExist(supabaseClient, to)
  
   if(thatEmailHasRegister){
     return true
   }
 
-  let sendGridApiKey = process.env.SENDGRID_API_KEY
-  let sendgrid = createSendGrid(sendGridApiKey)
+  let sendgridClient = createSendGrid(process.env.SENDGRID_API_KEY)
 
-  const emailSendResponse = await sendSubEmail(sendgrid, to)
+  const emailSendResponse = await sendSubEmail(sendgridClient, to)
   console.log("EMAIL SEND")
-  await insertEmailSend(supabase, to, emailSendResponse.success, emailSendResponse.message)
+  await insertEmailSend(supabaseClient, to, emailSendResponse.success, emailSendResponse.message)
 
 })
