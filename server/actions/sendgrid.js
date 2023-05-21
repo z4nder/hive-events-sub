@@ -1,10 +1,12 @@
 
 import sgMail from '@sendgrid/mail'
 
-export const sendgrid = sgMail.setApiKey(process.env.SENDGRID_API_KEY)
-
 const fromEmail = "contato@hivecommunity.dev"
 const tempalteId = "d-1c287f5cab2f4219a14f1f62cfcc81fb"
+
+export const createSendGrid = async (sendGridApiKey)  => {
+    return sgMail.setApiKey(sendGridApiKey)
+}
 
 export const sendSubEmail = async (sendgridClient, email)  => {
     const msg = {

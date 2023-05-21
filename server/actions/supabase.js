@@ -1,9 +1,9 @@
 import { createClient } from '@supabase/supabase-js'
 
-const supabaseUrl = process.env.SUPABASE_URL
-const supabaseKey = process.env.SUPABASE_KEY
 
-export const supabase = createClient(supabaseUrl, supabaseKey)
+export const createSupabase = async (supabaseUrl, supabaseKey)  => {
+   return supabase = createClient(supabaseUrl, supabaseKey)
+}
 
 export const verifyRegisterHasExist = async (supabaseClient, email)  => {
     const { data, error } = await supabaseClient
