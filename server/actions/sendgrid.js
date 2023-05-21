@@ -1,5 +1,6 @@
 const fromEmail = "contato@hivecommunity.dev"
-const tempalteId = "d-1c287f5cab2f4219a14f1f62cfcc81fb"
+const tempalteId = "d-01be8ef2ee4647d4a5bfc5c118fc25f4"
+
 
 export const sendSubEmail = async (sendgridClient, email)  => {
     const msg = {
