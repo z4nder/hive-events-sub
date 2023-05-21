@@ -75,6 +75,8 @@ const features = [
       "O seu ebook já foi enviado por e-mail, caso não tenha recebido confira a caixa de spam.",
     href: "#",
     icon: BookOpenIcon,
+    href: "https://hivecommunity.dev/docs/hive_git_github.pdf",
+    link: "Acesse seu ebook",
   },
   {
     name: "Hive Community",
