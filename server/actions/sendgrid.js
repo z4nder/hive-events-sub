@@ -1,6 +1,3 @@
-
-import sgMail from '@sendgrid/mail'
-
 const fromEmail = "contato@hivecommunity.dev"
 const tempalteId = "d-1c287f5cab2f4219a14f1f62cfcc81fb"
 
