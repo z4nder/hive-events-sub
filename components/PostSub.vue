@@ -2,7 +2,9 @@
   <div
     class="relative isolate overflow-hidden bg-secondary-600 px-6 py-24 shadow-2xl sm:rounded-3xl sm:px-24 xl:py-32"
   >
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div
+      class="flex flex-col items-center lg:flex-grow mx-auto max-w-7xl px-6 lg:px-8"
+    >
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
           🎉 Inscrito com sucesso

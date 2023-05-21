@@ -7,3 +7,12 @@
     </div>
   </div>
 </template>
+
+<script setup>
+import JSConfetti from "js-confetti";
+
+onMounted(() => {
+  const jsConfetti = new JSConfetti();
+  jsConfetti.addConfetti();
+});
+</script>
